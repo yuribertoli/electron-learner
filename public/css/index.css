@@ -1,0 +1,14 @@
+body { font-family: Arial; padding: 20px; }
+.card {
+  display: inline-block; width: 200px; height: 120px;
+  margin: 10px; padding: 20px;
+  border-radius: 12px; cursor: pointer;
+  background: #f0f0f0; text-align: center;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+}
+#addTopicForm { margin-top: 20px; }
+#newTopicName { padding: 8px; font-size: 14px; }
+#addTopicBtn {
+  padding: 8px 12px; margin-left: 8px;
+  border-radius: 6px; border: none; background: #4CAF50; color: white; cursor: pointer;
+}

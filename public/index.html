@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self' ipc:;"
+    />
+    <title>Topics</title>
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <h1>Topics</h1>
+
+    <div id="topicsContainer">
+      <input type="text" id="newTopicInput" placeholder="New topic name" />
+      <button id="addTopicBtn">Add Topic</button>
+      <div id="topicsList"></div>
+    </div>
+
+    <!-- Edit Topic Modal -->
+    <div id="editModal" class="modal">
+      <div class="modal-content">
+        <h2>Edit Topic</h2>
+        <input type="text" id="editTopicInput" />
+        <button id="saveEditBtn">Save</button>
+      </div>
+    </div>
+
+    <script type="module" src="../dist/renderer/index.js"></script>
+  </body>
+</html>

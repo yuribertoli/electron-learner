@@ -1,0 +1,23 @@
+body { font-family: Arial; padding: 20px; }
+.subtopic {
+  padding: 10px; margin: 5px;
+  background: #e0e0e0; cursor: pointer;
+  border-radius: 8px;
+}
+#addSubtopicForm { margin-top: 20px; }
+#addSubtopicForm input { padding: 8px; margin-right: 8px; }
+#addSubtopicBtn {
+  padding: 8px 12px; border-radius: 6px; border: none;
+  background: #2196F3; color: white; cursor: pointer;
+}
+.modal {
+  display: none; position: fixed; top: 0; left: 0;
+  width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 1000;
+}
+.modal-content {
+  background: #fff; margin: 15% auto; padding: 20px;
+  width: 60%; border-radius: 12px;
+}
+.close {
+  float: right; font-size: 24px; cursor: pointer;
+}

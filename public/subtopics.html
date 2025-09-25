@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self' ipc:;"
+    />
+    <title>Subtopics</title>
+    <link rel="stylesheet" href="./css/subtopics.css" />
+  </head>
+  <body>
+    <h1 id="topicTitle"></h1>
+
+    <div id="addSubContainer">
+      <input type="text" id="newSubtopicTitle" placeholder="Subtopic title" />
+      <input
+        type="text"
+        id="newSubtopicDesc"
+        placeholder="Subtopic description"
+      />
+      <button id="addSubtopicBtn">Add Subtopic</button>
+    </div>
+
+    <div id="subtopicsList"></div>
+
+    <!-- View Description Modal -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <h2 id="modalTitle"></h2>
+        <p id="modalDesc"></p>
+        <button id="closeBtn">Close</button>
+      </div>
+    </div>
+
+    <!-- Edit Subtopic Modal -->
+    <div id="editSubModal" class="modal">
+      <div class="modal-content">
+        <h2>Edit Subtopic</h2>
+        <input type="text" id="editSubTitle" placeholder="Title" />
+        <input type="text" id="editSubDesc" placeholder="Description" />
+        <button id="saveSubEditBtn">Save</button>
+      </div>
+    </div>
+
+    <script type="module" src="../dist/renderer/subtopics.js"></script>
+  </body>
+</html>

@@ -1,15 +1,13 @@
 {
   "name": "electron-learner",
   "version": "1.0.0",
-  "description": "Desktop app for easy topics visualization",
+  "description": "Desktop app for topics visualization",
   "main": "dist/main.js",
+  "type": "module",
   "scripts": {
     "start": "electron .",
     "build": "tsc --project tsconfig.json"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "electron": "^38.1.2"
   },
